@@ -1,0 +1,420 @@
+/* ===========================
+   App Layout
+=========================== */
+
+.app{
+    display:flex;
+    min-height:100vh;
+    background:#121212;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar{
+    width:260px;
+    background:#121212;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    border-right:1px solid #282828;
+}
+
+.sidebar-logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:40px;
+}
+
+.sidebar-logo i{
+    color:var(--spotify-green);
+    font-size:38px;
+}
+
+.sidebar-logo h2{
+    font-size:24px;
+    color:#fff;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar nav a{
+
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    color:#b3b3b3;
+    text-decoration:none;
+
+    padding:15px 20px;
+
+    margin-bottom:10px;
+
+    border-radius:12px;
+
+    font-size:18px;
+    font-weight:600;
+
+    transition:all .3s ease;
+
+}
+
+.sidebar nav a:hover{
+
+    background:#282828;
+
+    color:#fff;
+
+    transform:translateX(8px);
+
+}
+
+.sidebar nav a.active{
+
+    background:#1DB954;
+
+    color:#000;
+
+}
+
+.sidebar nav a.active i{
+
+    color:#000;
+
+}
+
+/* ===========================
+   Main Content
+=========================== */
+
+.main-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+/* ===========================
+   Top Navbar
+=========================== */
+
+.top-navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 35px;
+
+    background:#121212;
+
+    border-bottom:1px solid #2a2a2a;
+
+}
+
+.search-box{
+
+    width:420px;
+
+    background:#2b2b2b;
+
+    border-radius:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 18px;
+
+}
+
+.search-box i{
+
+    color:var(--grey);
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    background:transparent;
+
+    color:white;
+
+    font-size:15px;
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.profile i{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+}
+
+.profile img{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+}
+/* ===========================
+   Content
+=========================== */
+
+.content{
+
+    padding:35px;
+
+}
+
+.content h1{
+
+    font-size:46px;
+
+    margin-bottom:10px;
+
+}
+
+.welcome-text{
+
+    color:#b3b3b3;
+
+    margin-bottom:35px;
+
+}
+
+.section-title{
+
+    margin-bottom:22px;
+
+    font-size:28px;
+
+}
+
+/* ===========================
+   Playlist Grid
+=========================== */
+
+.playlist-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.playlist-card{
+
+    background:#181818;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.playlist-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#242424;
+
+}
+
+.playlist-card img{
+
+    width:100%;
+
+    height:190px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    margin-bottom:15px;
+
+}
+
+.playlist-card h3{
+
+    margin-bottom:8px;
+
+}
+
+.playlist-card p{
+
+    color:#b3b3b3;
+
+    font-size:14px;
+
+}
+/* ===========================
+   Quick Access
+=========================== */
+
+.quick-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:18px;
+
+    margin-bottom:45px;
+
+}
+
+.quick-card{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#242424;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.quick-card:hover{
+
+    background:#323232;
+
+    transform:scale(1.02);
+
+}
+
+.quick-card img{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:cover;
+
+}
+
+.quick-card span{
+
+    padding-left:18px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   Popular Artists
+=========================== */
+
+/* ==========================
+   Section Header
+========================== */
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:50px 0 20px;
+}
+
+.section-header h2{
+    font-size:30px;
+    font-weight:700;
+}
+
+.section-header a{
+    color:#b3b3b3;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+}
+
+.section-header a:hover{
+    color:#fff;
+}
+
+
+.show-btn{
+    background:none;
+    border:none;
+    color:#b3b3b3;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.show-btn:hover{
+    color:white;
+}
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:40px 0 25px;
+}
+
+.section-title{
+    font-size:32px;
+    font-weight:700;
+    margin:0;
+}
+
+.show-btn{
+    background:none;
+    border:none;
+    color:#b3b3b3;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.show-btn:hover{
+    color:#fff;
+}

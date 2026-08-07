@@ -1,0 +1,320 @@
+/* ===========================
+   Login Page
+=========================== */
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    background:
+    radial-gradient(circle at top left,#1db95433,transparent 35%),
+    radial-gradient(circle at bottom right,#1db95422,transparent 35%),
+    #121212;
+}
+
+/* Background Blur */
+
+.background-blur{
+
+    position:fixed;
+    inset:0;
+    backdrop-filter:blur(20px);
+    z-index:-1;
+
+}
+
+/* Container */
+
+.login-container{
+
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+
+}
+
+/* Card */
+
+.login-card{
+
+    width:100%;
+    max-width:430px;
+
+    background:rgba(24,24,24,.85);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:45px;
+
+    box-shadow:0 0 40px rgba(0,0,0,.45);
+
+}
+/* ===========================
+   Logo
+=========================== */
+
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.logo i{
+    color:var(--spotify-green);
+    font-size:42px;
+}
+
+.logo h1{
+    font-size:34px;
+    font-weight:700;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.login-card h2{
+    text-align:center;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:var(--grey);
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:18px;
+}
+
+.input-box label{
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.input-box input{
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+    background:#2b2b2b;
+
+    color:#fff;
+
+    border:2px solid transparent;
+
+    transition:.3s;
+
+}
+
+.input-box input:focus{
+
+    border-color:var(--spotify-green);
+
+    box-shadow:0 0 15px rgba(29,185,84,.25);
+
+}
+
+/* ===========================
+   Remember
+=========================== */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:18px 0 25px;
+
+    font-size:14px;
+
+}
+
+.options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.options a{
+
+    color:var(--spotify-green);
+
+}
+
+/* ===========================
+   Login Button
+=========================== */
+
+.login-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:50px;
+
+    background:var(--spotify-green);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(29,185,84,.45);
+
+}
+/* ===========================
+   Divider
+=========================== */
+
+.divider{
+    display:flex;
+    align-items:center;
+    margin:25px 0;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#3a3a3a;
+}
+
+.divider span{
+    padding:0 15px;
+    color:var(--grey);
+    font-size:14px;
+    font-weight:600;
+}
+
+/* ===========================
+   Social Buttons
+=========================== */
+
+.social-login{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.social-login button{
+
+    width:100%;
+    padding:14px;
+
+    background:transparent;
+
+    border:1px solid #444;
+
+    color:white;
+
+    border-radius:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.social-login button:hover{
+
+    border-color:var(--spotify-green);
+
+    background:rgba(29,185,84,.08);
+
+}
+
+/* ===========================
+   Signup
+=========================== */
+
+.signup-text{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:var(--grey);
+
+}
+
+.signup-text a{
+
+    color:var(--spotify-green);
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   Card Animation
+=========================== */
+
+.login-card{
+
+    animation:fadeIn .7s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

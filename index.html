@@ -1,176 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Spotify Clone</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/landing.css">
+
 </head>
 
 <body>
 
-<nav>
+    <!-- Navbar -->
 
-<div class="logo">
-<i class="fa-brands fa-spotify"></i>
-<h2>Spotify</h2>
-</div>
+    <nav class="navbar">
 
-<ul>
+        <div class="logo">
 
-<li><a href="#">Premium</a></li>
-<li><a href="#">Support</a></li>
-<li><a href="#">Download</a></li>
-<li><a href="#">Sign Up</a></li>
+            <i class="fa-brands fa-spotify"></i>
 
-<button>Log In</button>
+            <h2>Spotify</h2>
 
-</ul>
+        </div>
 
-</nav>
+        <ul>
 
-<section class="hero">
+            <li><a href="premium.html">Premium</a></li>
 
-<div class="hero-text">
+            <li><a href="#">Support</a></li>
 
-<h1>Listening is Everything</h1>
+            <li><a href="#">Download</a></li>
 
-<p>
-Millions of songs, podcasts and playlists.
-No credit card needed.
-</p>
+            <li><a href="login.html">Sign Up</a></li>
 
-<div class="hero-buttons">
+            <li>
+                <a href="login.html" class="login-btn">
+                    Log In
+                </a>
+            </li>
 
-<button class="green-btn">
-Get Spotify Free
-</button>
+        </ul>
 
-<button class="dark-btn">
-View Plans
-</button>
+    </nav>
 
-</div>
 
-</div>
 
-<div class="hero-image">
+    <!-- Hero Section -->
 
-<img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=900"
-alt="Music">
+    <section class="hero">
 
-</div>
+        <div class="hero-left">
 
-</section>
+            <h1>
+                Listening is <br>
+                Everything
+            </h1>
 
-<section class="section">
+            <p>
 
-<h2>Featured Playlists</h2>
+                Millions of songs, podcasts and playlists.
+                <br>
+                No credit card needed.
 
-<div class="cards">
+            </p>
 
-<div class="card">
+            <div class="hero-buttons">
 
-<img src="https://picsum.photos/300?1">
+                <a href="login.html" class="green-btn">
 
-<h3>Today's Top Hits</h3>
+                    Get Spotify Free
 
-<p>The biggest songs right now.</p>
+                </a>
 
-</div>
+                <a href="premium.html" class="outline-btn">
 
-<div class="card">
+                    View Plans
 
-<img src="https://picsum.photos/300?2">
+                </a>
 
-<h3>Chill Vibes</h3>
+            </div>
 
-<p>Relax and enjoy the music.</p>
+        </div>
 
-</div>
 
-<div class="card">
 
-<img src="https://picsum.photos/300?3">
+        <div class="hero-right">
 
-<h3>Workout Mix</h3>
+            <img src="images/hero.jpg" alt="Spotify">
 
-<p>Boost your energy.</p>
+        </div>
 
-</div>
-
-<div class="card">
-
-<img src="https://picsum.photos/300?4">
-
-<h3>Party Night</h3>
-
-<p>Let's celebrate together.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Popular Artists</h2>
-
-<div class="cards">
-
-<div class="artist">
-
-<img src="images/arijit.jpg" alt="Arijit Singh">
-
-<h3>Arijit Singh</h3>
-
-</div>
-
-<div class="artist">
-
-<img src="images/taylor.jpg" alt="Taylor Swift">
-
-<h3>Taylor Swift</h3>
-
-</div>
-
-<div class="artist">
-
-<img src="images/weeknd.jpg" alt="The Weeknd">
-
-<h3>The Weeknd</h3>
-
-</div>
-
-<div class="artist">
-
-<img src="images/ed.jpg" alt="Ed Sheeran">
-
-<h3>Ed Sheeran</h3>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 Spotify Clone | Made by Idris Dhanani</p>
-
-</footer>
-
-<script src="script.js"></script>
+    </section>
 
 </body>
 

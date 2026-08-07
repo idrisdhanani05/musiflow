@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    width:100%;
+    height:90px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 70px;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo i{
+
+    color:#1DB954;
+    font-size:48px;
+
+}
+
+.logo h2{
+
+    font-size:52px;
+    font-weight:700;
+
+}
+
+.navbar ul{
+
+    display:flex;
+    align-items:center;
+    gap:45px;
+
+    list-style:none;
+
+}
+
+.navbar a{
+
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#1DB954;
+
+}
+
+.login-btn{
+
+    background:#fff;
+    color:#000 !important;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+}
+
+.login-btn:hover{
+
+    background:#1DB954 !important;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    width:100%;
+    min-height:calc(100vh - 90px);
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:40px 70px;
+
+}
+
+.hero-left{
+
+    width:48%;
+
+}
+
+.hero-left h1{
+
+    font-size:90px;
+    line-height:95px;
+
+    margin-bottom:35px;
+
+}
+
+.hero-left p{
+
+    font-size:28px;
+    color:#b3b3b3;
+
+    line-height:45px;
+
+    margin-bottom:45px;
+
+}
+
+/* ================= BUTTONS ================= */
+
+.hero-buttons{
+
+    display:flex;
+    gap:20px;
+
+}
+
+.green-btn{
+
+    background:#1DB954;
+    color:#000;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.green-btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+.outline-btn{
+
+    border:2px solid white;
+
+    color:#fff;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.outline-btn:hover{
+
+    background:#fff;
+    color:#000;
+
+}
+
+/* ================= IMAGE ================= */
+
+.hero-right{
+
+    width:46%;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.hero-right img{
+
+    width:100%;
+    max-width:650px;
+
+    border-radius:30px;
+
+    box-shadow:0 0 80px rgba(29,185,84,.25);
+
+    transition:.4s;
+
+}
+
+.hero-right img:hover{
+
+    transform:scale(1.03);
+
+}
