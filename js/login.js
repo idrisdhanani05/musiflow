@@ -1,26 +1,22 @@
 const loginForm = document.getElementById("loginForm");
 
-loginForm.addEventListener("submit", function(e){
+loginForm.addEventListener("submit", function (e) {
 
     e.preventDefault();
 
-    window.location.href="home.html";
+    const email = loginForm.querySelector('input[type="email"]').value.trim();
+    const password = loginForm.querySelector('input[type="password"]').value.trim();
 
-});
-const recentArtistCards = document.querySelectorAll(".recent-card[data-artist]");
+    if (email === "" || password === "") {
+        alert("Please enter your email and password.");
+        return;
+    }
 
-recentArtistCards.forEach(card => {
+    // Save login state
+    localStorage.setItem("musicflowLoggedIn", "true");
+    localStorage.setItem("musicflowUserEmail", email);
 
-    card.addEventListener("click", () => {
-
-        const artist = card.dataset.artist;
-
-        const results = songs.filter(song =>
-            song.artist.toLowerCase().includes(artist.toLowerCase())
-        );
-
-        showCategoryResults(artist, results);
-
-    });
+    // Go to Home
+    window.location.href = "home.html";
 
 });

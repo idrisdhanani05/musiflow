@@ -77,63 +77,125 @@
 
             <header class="top-navbar">
 
-                <div class="search-box">
-
-                    <i class="fa-solid fa-magnifying-glass"></i>
-
-                    <input type="text" placeholder="What do you want to play?">
-
-                </div>
-
                 <div class="profile">
 
-                    <i class="fa-regular fa-bell"></i>
+                  <div class="notification-wrapper">
 
-                    <img src="https://i.pravatar.cc/40" alt="Profile">
+    <button class="notification-btn" id="notificationBtn">
+        <i class="fa-regular fa-bell"></i>
+        <span class="notification-badge">3</span>
+    </button>
+
+    <div class="notification-menu" id="notificationMenu">
+
+        <div class="notification-header">
+            <h3>Notifications</h3>
+            <button>Mark all as read</button>
+        </div>
+
+        <div class="notification-item">
+            <div class="notification-icon">🎵</div>
+
+            <div>
+                <strong>New Music</strong>
+                <p>New songs are waiting for you.</p>
+                <small>10 min ago</small>
+            </div>
+        </div>
+
+        <div class="notification-item">
+            <div class="notification-icon">❤️</div>
+
+            <div>
+                <strong>Liked Song</strong>
+                <p>You liked a new song.</p>
+                <small>1 hour ago</small>
+            </div>
+        </div>
+
+        <div class="notification-item">
+            <div class="notification-icon">🎧</div>
+
+            <div>
+                <strong>Musicflow Mix</strong>
+                <p>Your personalized mix is ready.</p>
+                <small>Yesterday</small>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+           <div class="profile-avatar" id="profileAvatar">I</div>        
 
                 </div>
 
+                <div class="profile-menu" id="profileMenu">
+
+    <div class="profile-menu-header">
+        <div class="profile-avatar large">I</div>
+
+        <div>
+            <h3>Idris</h3>
+            <p>idris@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="profile-menu-divider"></div>
+
+    <button onclick="viewProfile()">
+    <i class="fa-regular fa-user"></i>
+    View Profile
+</button>
+
+<button class="logout-btn" onclick="logoutUser()">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    Log Out
+</button>
+
+    
+
+</div>
+
             </header>
+
+
 
             <!-- Main Content -->
 
             <section class="content">
 
-   <h1 class="greeting">Good Evening 👋</h1>
-
     <h2 class="section-title">Quick Access</h2>
 
 <div class="quick-grid">
 
-    <div class="quick-card">
-        <img src="images/arijit.jpg">
-        <span>Liked Songs</span>
-    </div>
+   
 
-    <div class="quick-card">
-        <img src="images/weeknd.jpg">
-        <span>Top Hits</span>
-    </div>
+   <div class="quick-card" onclick="openQuickAccess('top-hits')">
+    <img src="images/weeknd.jpg">
+    <span>Top Hits</span>
+</div>
 
-    <div class="quick-card">
-        <img src="images/taylor.jpg">
-        <span>Chill Mix</span>
-    </div>
+    <div class="quick-card" onclick="openQuickAccess('chill')">
+    <img src="images/taylor.jpg">
+    <span>Chill Mix</span>
+</div>
 
-    <div class="quick-card">
-        <img src="images/ed.jpg">
-        <span>Daily Mix</span>
-    </div>
+   <div class="quick-card" onclick="openQuickAccess('daily')">
+    <img src="images/ed.jpg">
+    <span>Daily Mix</span>
+</div>
 
-    <div class="quick-card">
-        <img src="images/arijit.jpg">
-        <span>Arijit Mix</span>
-    </div>
+   <div class="quick-card" onclick="openQuickAccess('arijit')">
+    <img src="images/arijit.jpg">
+    <span>Arijit Mix</span>
+</div>
 
-    <div class="quick-card">
-        <img src="images/weeknd.jpg">
-        <span>Discover Weekly</span>
-    </div>
+    <div class="quick-card" onclick="openQuickAccess('discover')">
+    <img src="images/weeknd.jpg">
+    <span>Discover Weekly</span>
+</div>
 
 </div>
 
@@ -143,41 +205,46 @@
 
     <div class="playlist-grid">
 
-        <div class="playlist-card">
-            <img src="images/arijit.jpg" alt="">
-            <h3>Kesariya</h3>
-            <p>Arijit Singh</p>
-        </div>
+        <div class="playlist-card"
+     onclick="openHomeSong('Kesariya', 'Arijit Singh')">
+    <img src="images/arijit.jpg" alt="">
+    <h3>Kesariya</h3>
+    <p>Arijit Singh</p>
+</div>
 
-        <div class="playlist-card">
-            <img src="images/taylor.jpg" alt="">
-            <h3>Cruel Summer</h3>
-            <p>Taylor Swift</p>
-        </div>
+       <div class="playlist-card"
+     onclick="openHomeSong('Cruel Summer', 'Taylor Swift')">
+    <img src="images/taylor.jpg" alt="">
+    <h3>Cruel Summer</h3>
+    <p>Taylor Swift</p>
+</div>
 
-        <div class="playlist-card">
-            <img src="images/weeknd.jpg" alt="">
-            <h3>Blinding Lights</h3>
-            <p>The Weeknd</p>
-        </div>
+       <div class="playlist-card"
+     onclick="openHomeSong('Blinding Lights', 'The Weeknd')">
+    <img src="images/weeknd.jpg" alt="">
+    <h3>Blinding Lights</h3>
+    <p>The Weeknd</p>
+</div>
 
-        <div class="playlist-card">
-            <img src="images/ed.jpg" alt="">
-            <h3>Perfect</h3>
-            <p>Ed Sheeran</p>
-        </div>
+       <div class="playlist-card"
+     onclick="openHomeSong('Perfect', 'Ed Sheeran')">
+    <img src="images/ed.jpg" alt="">
+    <h3>Perfect</h3>
+    <p>Ed Sheeran</p>
+</div>
+        <div class="playlist-card"
+     onclick="openHomeSong('Agar Tum Saath Ho', 'Alka Yagnik, Arijit Singh')">
+    <img src="images/arijit.jpg" alt="">
+    <h3>Agar Tum Saath Ho</h3>
+    <p>Arijit Singh</p>
+</div>
 
-        <div class="playlist-card">
-            <img src="images/arijit.jpg" alt="">
-            <h3>Agar Tum Saath Ho</h3>
-            <p>Arijit Singh</p>
-        </div>
-
-        <div class="playlist-card">
-            <img src="images/weeknd.jpg" alt="">
-            <h3>Starboy</h3>
-            <p>The Weeknd</p>
-        </div>
+       <div class="playlist-card"
+     onclick="openHomeSong('Starboy', 'The Weeknd')">
+    <img src="images/weeknd.jpg" alt="">
+    <h3>Starboy</h3>
+    <p>The Weeknd</p>
+</div>
 
     </div>
 
@@ -185,34 +252,38 @@
 
 <div class="playlist-grid">
 
-    <div class="playlist-card">
-        <img src="images/weeknd.jpg" alt="">
-        <h3>Starboy</h3>
-        <p>The Weeknd</p>
-    </div>
+   <div class="playlist-card"
+     onclick="openHomeSong('Starboy', 'The Weeknd')">
+    <img src="images/weeknd.jpg" alt="">
+    <h3>Starboy</h3>
+    <p>The Weeknd</p>
+</div>
 
-    <div class="playlist-card">
-        <img src="images/ed.jpg" alt="">
-        <h3>Shape of You</h3>
-        <p>Ed Sheeran</p>
-    </div>
+    <div class="playlist-card"
+     onclick="openHomeSong('Shape of You', 'Ed Sheeran')">
+    <img src="images/ed.jpg" alt="">
+    <h3>Shape of You</h3>
+    <p>Ed Sheeran</p>
+</div>
 
-    <div class="playlist-card">
-        <img src="images/taylor.jpg" alt="">
-        <h3>Anti-Hero</h3>
-        <p>Taylor Swift</p>
-    </div>
+    <div class="playlist-card"
+     onclick="openHomeSong('Anti-Hero', 'Taylor Swift')">
+    <img src="images/taylor.jpg" alt="">
+    <h3>Anti-Hero</h3>
+    <p>Taylor Swift</p>
+</div>
 
-    <div class="playlist-card">
-        <img src="images/arijit.jpg" alt="">
-        <h3>Chaleya</h3>
-        <p>Arijit Singh</p>
-    </div>
+    <div class="playlist-card"
+     onclick="openHomeSong('Chaleya', 'Arijit Singh')">
+    <img src="images/arijit.jpg" alt="">
+    <h3>Chaleya</h3>
+    <p>Arijit Singh</p>
+</div>
 
 </div>
 
 </section>
-
+<script src="js/home.js"></script>
 
 </body>
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Playlist - Musicflow</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/playlist.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="playlist-page">
+
+        <button class="back-btn" onclick="history.back()">
+            ← Back
+        </button>
+
+        <section class="playlist-header">
+
+            <div class="playlist-cover">
+                🎵
+            </div>
+
+            <div>
+                <p>PLAYLIST</p>
+                <h1 id="playlistTitle">Playlist</h1>
+                <span id="playlistDescription">
+                    Musicflow playlist
+                </span>
+            </div>
+
+        </section>
+
+
+        <section class="playlist-songs">
+
+            <h2>Songs</h2>
+
+            <div id="songList"></div>
+
+        </section>
+
+    </main>
+
+    <script src="js/songs.js"></script>
+<script src="js/playlist.js"></script>
+</body>
+
+</html>

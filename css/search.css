@@ -486,3 +486,176 @@ body {
     width: 130px;
     accent-color: white;
 }
+
+/* ================= MUSICFLOW SEARCH THEME ================= */
+
+/* Search active button - same green as Home */
+.sidebar nav a.active {
+    background: #62C263 !important;
+    color: #080808 !important;
+}
+
+.sidebar nav a.active span {
+    color: #080808 !important;
+}
+
+
+/* Main search area */
+.main-content {
+    background: #121212;
+}
+
+
+/* Search bar */
+.search-box {
+    background: #242424;
+    border: 1px solid #303030;
+}
+
+.search-box:hover,
+.search-box:focus-within {
+    background: #292929;
+    border-color: #3a3a3a;
+}
+
+.search-box input {
+    color: #ffffff;
+}
+
+.search-box input::placeholder {
+    color: #a7a7a7;
+}
+
+.search-icon {
+    color: #62C263;
+}
+
+
+/* Section headings */
+.search-section h1 {
+    color: #ffffff;
+}
+
+
+/* Recent Search cards */
+.recent-card {
+    background: #1e1e1e;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.recent-card:hover {
+    background: #292929;
+    border-color: #62C263;
+    transform: translateY(-2px);
+}
+
+.recent-card h3 {
+    color: #ffffff;
+}
+
+.recent-card p {
+    color: #a7a7a7;
+}
+
+
+/* Recent icons */
+.recent-image {
+    background: #292929;
+}
+
+
+/* Browse cards */
+.browse-card {
+    background: #1e1e1e;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.browse-card:hover {
+    background: #292929;
+    border-color: #62C263;
+    transform: translateY(-3px);
+}
+
+.browse-card h2 {
+    color: #ffffff;
+}
+
+
+/* Search results */
+.result-card {
+    background: #1e1e1e;
+    border: 1px solid transparent;
+}
+
+.result-card:hover {
+    background: #292929;
+    border-color: #62C263;
+}
+
+.result-info h3 {
+    color: #ffffff;
+}
+
+.result-info p {
+    color: #a7a7a7;
+}
+
+
+/* Back button */
+.back-browse-btn {
+    background: transparent;
+    border: 1px solid #3a3a3a;
+    color: #ffffff;
+}
+
+.back-browse-btn:hover {
+    background: #292929;
+    border-color: #62C263;
+}
+
+/* ================= CLEAN HOVER ================= */
+
+.recent-card:hover,
+.browse-card:hover,
+.result-card:hover {
+    background: #292929;
+    border-color: transparent !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Search active button green rahega */
+.sidebar nav a.active {
+    background: #62C263 !important;
+    color: #080808 !important;
+}
+
+.sidebar nav a.active span {
+    color: #080808 !important;
+}
+.main-content {
+    width: 100%;
+    margin-left: 0;
+    background: #121212;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container,
+.search-section {
+    width: 90%;
+    max-width: 1350px;
+}
+.search-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-section {
+    margin-left: auto;
+    margin-right: auto;
+}

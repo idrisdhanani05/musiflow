@@ -215,3 +215,47 @@ body{
     transform:scale(1.03);
 
 }
+
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 28px;
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.primary-btn {
+    background: #62C263;
+    color: #080808;
+}
+
+.primary-btn:hover {
+    background: #70d071;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #555;
+}
+
+.secondary-btn:hover {
+    background: #292929;
+    transform: translateY(-2px);
+}

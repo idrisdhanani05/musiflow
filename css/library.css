@@ -1,0 +1,177 @@
+/* ================= LIBRARY PAGE ================= */
+
+.library-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 0 80px;
+    color: white;
+}
+
+
+/* Header */
+
+.library-header {
+    margin-bottom: 45px;
+}
+
+.library-header h1 {
+    font-size: 38px;
+    margin: 0;
+}
+
+
+/* Sections */
+
+.library-section {
+    margin-bottom: 50px;
+}
+
+.library-section h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* ================= DOWNLOADED SONGS ================= */
+
+.downloaded-list {
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.downloaded-song {
+    display: flex;
+    align-items: center;
+
+    padding: 18px 22px;
+
+    border-bottom: 1px solid #2b2b2b;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.downloaded-song:last-child {
+    border-bottom: none;
+}
+
+.downloaded-song:hover {
+    background: #292929;
+    transform: translateX(3px);
+}
+
+
+/* Song icon */
+
+.song-icon {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 8px;
+
+    background: #292929;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    margin-right: 18px;
+}
+
+
+/* Song information */
+
+.song-details {
+    flex: 1;
+}
+
+.song-details h3 {
+    margin: 0 0 5px;
+
+    font-size: 17px;
+}
+
+.song-details p {
+    margin: 0;
+
+    color: #a7a7a7;
+    font-size: 14px;
+}
+
+
+/* Download icon */
+
+.download-icon {
+    color: #62C263;
+    font-size: 17px;
+}
+
+
+/* ================= LISTENING TIME ================= */
+
+.listening-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.time-card {
+    background: #1e1e1e;
+
+    border-radius: 15px;
+
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    transition: 0.2s ease;
+}
+
+.time-card:hover {
+    background: #292929;
+    transform: translateY(-3px);
+}
+
+.time-card i {
+    color: #62C263;
+    font-size: 25px;
+}
+
+.time-card span {
+    color: #a7a7a7;
+    font-size: 15px;
+}
+
+.time-card strong {
+    color: white;
+    font-size: 24px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .library-page {
+        width: 92%;
+    }
+
+    .listening-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .library-header h1 {
+        font-size: 30px;
+    }
+
+}

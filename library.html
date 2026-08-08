@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Library - MusicFlow</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/library.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="library-page">
+
+        <header class="library-header">
+
+            <h1>Your Library</h1>
+
+        </header>
+
+
+        <!-- Downloaded Songs -->
+
+        <section class="library-section">
+
+            <h2>Downloaded Songs</h2>
+
+            <div class="downloaded-list">
+
+                <div class="downloaded-song"
+                     onclick="openLibrarySong('Kesariya', 'Arijit Singh')">
+
+                    <div class="song-icon">
+                        🎵
+                    </div>
+
+                    <div class="song-details">
+
+                        <h3>Kesariya</h3>
+
+                        <p>Arijit Singh</p>
+
+                    </div>
+
+                    <span class="download-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="downloaded-song"
+                     onclick="openLibrarySong('Perfect', 'Ed Sheeran')">
+
+                    <div class="song-icon">
+                        🎵
+                    </div>
+
+                    <div class="song-details">
+
+                        <h3>Perfect</h3>
+
+                        <p>Ed Sheeran</p>
+
+                    </div>
+
+                    <span class="download-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="downloaded-song"
+                     onclick="openLibrarySong('Blinding Lights', 'The Weeknd')">
+
+                    <div class="song-icon">
+                        🎵
+                    </div>
+
+                    <div class="song-details">
+
+                        <h3>Blinding Lights</h3>
+
+                        <p>The Weeknd</p>
+
+                    </div>
+
+                    <span class="download-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+
+                </div>
+
+
+                <div class="downloaded-song"
+                     onclick="openLibrarySong('Chaleya', 'Arijit Singh')">
+
+                    <div class="song-icon">
+                        🎵
+                    </div>
+
+                    <div class="song-details">
+
+                        <h3>Chaleya</h3>
+
+                        <p>Arijit Singh</p>
+
+                    </div>
+
+                    <span class="download-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Listening Time -->
+
+        <section class="library-section">
+
+            <h2>Listening Time</h2>
+
+            <div class="listening-grid">
+
+                <div class="time-card">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    <span>Today</span>
+
+                    <strong>42 min</strong>
+
+                </div>
+
+
+                <div class="time-card">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <span>This Week</span>
+
+                    <strong>5 hr 18 min</strong>
+
+                </div>
+
+
+                <div class="time-card">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    <span>This Month</span>
+
+                    <strong>21 hr 46 min</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/library.js"></script>
+
+</body>
+
+</html>

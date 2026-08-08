@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Premium - MusicFlow</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/premium.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="premium-page">
+
+        <!-- Back -->
+
+        <button class="premium-back-btn" onclick="window.location.href='home.html'">
+            ← Back to Home
+        </button>
+
+
+        <!-- Hero -->
+
+        <section class="premium-hero">
+
+            <div class="premium-crown">
+                <i class="fa-solid fa-crown"></i>
+            </div>
+
+            <p class="premium-label">MUSICFLOW PREMIUM</p>
+
+            <h1>Take Your Music<br>to the Next Level.</h1>
+
+            <p class="premium-subtitle">
+                Enjoy your music without limits.
+                No ads. Better quality. More freedom.
+            </p>
+
+        </section>
+
+
+        <!-- Benefits -->
+
+        <section class="premium-benefits">
+
+            <div class="premium-benefit">
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-ban"></i>
+                </div>
+
+                <h3>Ad-Free Music</h3>
+
+                <p>
+                    Enjoy uninterrupted music without advertisements.
+                </p>
+
+            </div>
+
+
+            <div class="premium-benefit">
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+
+                <h3>Unlimited Downloads</h3>
+
+                <p>
+                    Download your favorite songs and listen offline.
+                </p>
+
+            </div>
+
+
+            <div class="premium-benefit">
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+
+                <h3>High Quality Audio</h3>
+
+                <p>
+                    Experience your music with better sound quality.
+                </p>
+
+            </div>
+
+
+            <div class="premium-benefit">
+
+                <div class="benefit-icon">
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+
+                <h3>Unlimited Skips</h3>
+
+                <p>
+                    Skip songs freely and listen to exactly what you want.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Pricing -->
+
+        <section class="premium-pricing">
+
+            <p class="pricing-label">PREMIUM PLAN</p>
+
+            <h2>₹99 <span>/ month</span></h2>
+
+            <p class="pricing-description">
+                Everything you need for the ultimate music experience.
+            </p>
+
+            <button class="premium-btn" onclick="openPremiumModal()">
+                Get Premium
+            </button>
+
+        </section>
+
+
+        <!-- Modal -->
+
+        <div class="premium-modal" id="premiumModal">
+
+            <div class="premium-modal-box">
+
+                <button
+                    class="modal-close"
+                    onclick="closePremiumModal()">
+                    ×
+                </button>
+
+                <i class="fa-solid fa-crown modal-crown"></i>
+
+                <h2>MusicFlow Premium</h2>
+
+                <p>
+                    Premium subscription setup is coming soon.
+                </p>
+
+                <button
+                    class="premium-btn"
+                    onclick="closePremiumModal()">
+                    Okay
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/premium.js"></script>
+
+</body>
+
+</html>
