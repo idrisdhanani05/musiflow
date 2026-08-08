@@ -25,70 +25,58 @@ body{
 
 }
 
-.logo{
-
-    display:flex;
-    align-items:center;
-    gap:15px;
-
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
 }
 
-.logo i{
-
-    color:#1DB954;
-    font-size:48px;
-
+.logo i {
+    font-size: 55px;
+    color: #1db954;
 }
 
-.logo h2{
-
-    font-size:52px;
-    font-weight:700;
-
+.logo h2 {
+    font-size: 42px;
+    margin: 0;
+    white-space: nowrap;
 }
 
-.navbar ul{
-
-    display:flex;
-    align-items:center;
-    gap:45px;
-
-    list-style:none;
-
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 6%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.navbar a{
-
-    color:#fff;
-    text-decoration:none;
-    font-size:18px;
-    font-weight:600;
-
-    transition:.3s;
-
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.navbar a:hover{
-
-    color:#1DB954;
-
+.navbar ul li a {
+    white-space: nowrap;
 }
 
-.login-btn{
-
-    background:#fff;
-    color:#000 !important;
-
-    padding:15px 35px;
-
-    border-radius:50px;
-
-}
-
-.login-btn:hover{
-
-    background:#1DB954 !important;
-
+.login-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    height: 55px;
+    padding: 0 25px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
 /* ================= HERO ================= */
