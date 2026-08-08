@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search - Musicflow</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/search.css">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <h2>Musicflow</h2>
+        </div>
+
+        <nav>
+
+            <a href="home.html">
+                <span>⌂</span>
+                Home
+            </a>
+
+            <a href="search.html" class="active">
+                <span>⌕</span>
+                Search
+            </a>
+
+            <a href="library.html">
+                <span>♫</span>
+                Your Library
+            </a>
+
+            <a href="liked.html">
+                <span>♥</span>
+                Liked Songs
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Search Bar -->
+
+        <div class="search-container">
+
+            <div class="search-box">
+
+    <span class="search-icon">🔍</span>
+
+    <input
+        type="text"
+        placeholder="What do you want to listen to?"
+    >
+
+</div>
+
+        </div>
+
+
+        <!-- Recent Searches -->
+
+<section class="search-section">
+
+    <h1>Recent Searches</h1>
+
+    <div class="recent-grid">
+
+        <!-- Arijit Singh -->
+
+        <div class="recent-card"
+             onclick="showArtistSongs('Arijit Singh')">
+
+            <div class="recent-image">
+                🎵
+            </div>
+
+            <div>
+                <h3>Arijit Singh</h3>
+                <p>Artist</p>
+            </div>
+
+        </div>
+
+
+        <!-- The Weeknd -->
+
+        <div class="recent-card"
+             onclick="showArtistSongs('The Weeknd')">
+
+            <div class="recent-image">
+                🎧
+            </div>
+
+            <div>
+                <h3>The Weeknd</h3>
+                <p>Artist</p>
+            </div>
+
+        </div>
+
+
+        <!-- Shape of You -->
+
+        <div class="recent-card"
+             onclick="openSong('Shape of You', 'Ed Sheeran')">
+
+            <div class="recent-image">
+                🎶
+            </div>
+
+            <div>
+                <h3>Shape of You</h3>
+                <p>Song</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- Browse All -->
+
+        <section class="search-section">
+
+            <h1>Browse All</h1>
+
+            <div class="browse-grid">
+
+                <div class="browse-card" data-category="Hindi">
+    <h2>Hindi</h2>
+    <span>🎵</span>
+</div>
+
+                <div class="browse-card" data-category="English">
+    <h2>English</h2>
+    <span>🎧</span>
+</div>
+
+
+                <div class="browse-card" data-category="Bollywood">
+    <h2>Bollywood</h2>
+    <span>🎬</span>
+</div>
+
+                <div class="browse-card" data-category="Pop">
+    <h2>Pop</h2>
+    <span>🎤</span>
+</div>
+
+
+              <div class="browse-card" data-category="Hip-Hop">
+    <h2>Hip-Hop</h2>
+    <span>🔥</span>
+</div>
+
+               <div class="browse-card" data-category="Rock">
+    <h2>Rock</h2>
+    <span>🎸</span>
+</div>
+
+                <div class="browse-card" data-category="Chill">
+    <h2>Chill</h2>
+    <span>🌙</span>
+</div>
+
+                <div class="browse-card" data-category="Workout">
+    <h2>Workout</h2>
+    <span>💪</span>
+</div>
+
+            </div>
+
+        </section>
+
+        
+
+    </main>
+    <script src="js/search.js"></script>
+
+</body>
+
+</html>
+
